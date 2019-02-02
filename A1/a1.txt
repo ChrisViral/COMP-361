@@ -1,0 +1,11 @@
+Question 1:
+The harmonic series seems to converge to the value 15.403683, but this is clearly due to the limitation of the 32 bit float value used, where 1/n simply becomes too close to 0 to be correctly represented by floats in the relevant range of the current sum, and thus adds like a "zero", giving this false impression of convergence.
+
+As for 1/3^k, it very rapidly converges to 0, even with 64bit float values, so I've only kept the first four terms, as the rest started handing out errors.
+
+Question 2:
+No matter the chosen value of x_0 (excepted for 0 which causes a division by zero error), the value of the sequence converges strongly to 1.7099759466766968, which happens to be the cubic root of 5.
+
+For the second function, with values of c below 1, the sequence seems to converge downards from the original x_0 to a number between x_0 and 0. For values of 1 <= c <= 2, the value converges upwards from the original x_0, to a value seemingly between x_0 and 1. For values of c above 2, the series seems to not converge at all, and instead oscillate between different values between 0 and 1.
+
+Question 3
